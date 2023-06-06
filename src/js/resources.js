@@ -7,6 +7,7 @@ import murderBox from '../images/murderbox.png'
 import murderBox2 from '../images/murderbox2.png'
 import killerCloud from '../images/killerclowd.png'
 import regularBoost from '../images/boost.png'
+import killerCloud2 from '../images/killerclowd2.png'
 
 const Resources = {
     Rokkett : new ImageSource(rokkettPlayer),
@@ -16,6 +17,7 @@ const Resources = {
     MurderBox : new ImageSource(murderBox),
     MurderBox2 : new ImageSource(murderBox2),
     KillerClowd: new ImageSource(killerCloud),
+    KillerClowd2: new ImageSource(killerCloud2),
     RegularBoost: new ImageSource(regularBoost)
 }
 const ResourceLoader = new Loader([
@@ -27,7 +29,8 @@ const ResourceLoader = new Loader([
     Resources.MurderBox,
     Resources.MurderBox2,
     Resources.KillerClowd,
-    Resources.RegularBoost
+    Resources.RegularBoost,
+    Resources.KillerClowd2
 
 ])
 

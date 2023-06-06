@@ -7,7 +7,7 @@ export class Obstacle extends Actor {
     basicMotion
 
     constructor() {
-        super({width: 30, height: 60});
+        super({width: 40, height: 80});
 
         this.body.collisionType = CollisionType.Active
         this.body.useGravity = false
@@ -25,12 +25,12 @@ export class MurderBox extends Obstacle {
             grid: {
                 rows: 1,
                 columns: 2,
-                spriteWidth: 223,
+                spriteWidth: 111,
                 spriteHeight: 86
             }
         })
 
-        this.basicMotion = Animation.fromSpriteSheet(this.wingFlap, range(0, 2), 80, AnimationStrategy.Loop)
+        this.basicMotion = Animation.fromSpriteSheet(this.wingFlap, range(0, 1), 80, AnimationStrategy.Loop)
 
         this.yPos = yPos
         this.yVel = yVel
@@ -56,14 +56,29 @@ export class KillerClowd extends Obstacle {
     constructor(yPos, yVel, speed) {
         super();
 
+        this.thunderSparks = SpriteSheet.fromImageSource({
+            image: Resources.KillerClowd2,
+            grid: {
+                rows: 1,
+                columns: 2,
+                spriteWidth: 90,
+                spriteHeight: 69
+            }
+        })
+
+        this.basicMotion = Animation.fromSpriteSheet(this.thunderSparks, range(0, 1), 120, AnimationStrategy.Loop)
+
         this.yPos = yPos
         this.yVel = yVel
         this.speed = speed
+
+        this.graphics.add("thunderSpark", this.basicMotion)
+
+        this.graphics.use(this.basicMotion)
     }
 
     onInitialize(_engine) {
 
-        this.graphics.use(Resources.KillerClowd.toSprite())
         this.pos = new Vector(800,this.yPos)
         this.vel = new Vector(this.speed, 0)
 

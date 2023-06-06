@@ -32,7 +32,7 @@ export class ObstacleSpawner extends Actor {
 
             console.log("spawn")
             this.box = new MurderBox(
-                this.random.integer(0, 800),
+                this.random.integer(0, 600),
                 this.random.integer(-100, 100),
                 this.speed
             )
