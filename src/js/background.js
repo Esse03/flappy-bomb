@@ -1,6 +1,8 @@
 import { Actor, Vector, GraphicsGroup } from 'excalibur'
 import { Resources } from './resources.js'
 
+//wijzig
+
 export class Background extends Actor {
 
     offset

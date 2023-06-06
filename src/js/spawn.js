@@ -1,6 +1,8 @@
 import {Actor, Random, Timer} from "excalibur";
 import {KillerClowd, MurderBox, Obstacle} from "./obstacle.js";
 
+//wijzig
+
 export class ObstacleSpawner extends Actor {
 
     constructor() {

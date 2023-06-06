@@ -5,6 +5,8 @@ import {Scene1} from "./scenes/scene1.js";
 import {GameOverScene} from "./scenes/gameover.js";
 import {VictoryScene} from "./scenes/victory.js";
 
+//wijzig
+
 export class Game extends Engine {
 
     constructor() {

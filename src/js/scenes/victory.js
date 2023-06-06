@@ -1,6 +1,8 @@
 import {Scene, Input, Timer} from "excalibur"
 import {GameOver, WinGame} from "../background.js";
 
+//wijzig
+
 export class VictoryScene extends Scene {
 
     game

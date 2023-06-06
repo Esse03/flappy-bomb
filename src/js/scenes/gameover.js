@@ -2,6 +2,8 @@ import {Scene, Input, Timer, Color} from "excalibur"
 import {FailGame, GameOver} from "../background.js";
 import {ResourceLoader} from "../resources.js";
 
+//wijzig
+
 export class GameOverScene extends Scene {
 
     game

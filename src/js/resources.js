@@ -11,6 +11,8 @@ import killerCloud2 from '../images/killerclowd2.png'
 import victory from '../images/victory.png'
 import logo from '../images/logo.png'
 
+//wijzig
+
 const Resources = {
     Rokkett : new ImageSource(rokkettPlayer),
     Background : new ImageSource(backGround),

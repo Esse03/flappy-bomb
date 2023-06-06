@@ -2,6 +2,8 @@ import {Actor, Input, Vector, CollisionType, SpriteSheet, Animation, range, Anim
 import {Resources} from "./resources.js";
 import {Obstacle} from "./obstacle.js";
 
+//wijzig
+
 export class Player extends Actor {
 
     yvel

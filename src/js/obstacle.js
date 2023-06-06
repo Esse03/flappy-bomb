@@ -1,6 +1,8 @@
 import {Actor, AnimationStrategy, CollisionType, Animation, range, SpriteSheet, Vector} from "excalibur";
 import {Resources} from "./resources.js";
 
+//wijzig
+
 export class Obstacle extends Actor {
 
     wingFlap

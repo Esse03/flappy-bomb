@@ -5,6 +5,8 @@ import {Player} from "../player.js";
 import {ObstacleSpawner} from "../spawn.js";
 import {UI} from "../ui.js";
 
+//wijzig
+
 export class Scene1 extends Scene {
 
     game
