@@ -1,0 +1,3 @@
+# flappy-bomb
+
+flap = boom
