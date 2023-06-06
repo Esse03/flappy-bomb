@@ -1,7 +1,10 @@
-import {Actor, AnimationStrategy, CollisionType, range, SpriteSheet, Vector} from "excalibur";
+import {Actor, AnimationStrategy, CollisionType, Animation, range, SpriteSheet, Vector} from "excalibur";
 import {Resources} from "./resources.js";
 
 export class Obstacle extends Actor {
+
+    wingFlap
+    basicMotion
 
     constructor() {
         super({width: 30, height: 60});
