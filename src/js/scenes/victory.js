@@ -1,8 +1,7 @@
-import {Scene, Input, Timer, Color} from "excalibur"
-import {FailGame, GameOver} from "../background.js";
-import {ResourceLoader} from "../resources.js";
+import {Scene, Input, Timer} from "excalibur"
+import {GameOver, WinGame} from "../background.js";
 
-export class GameOverScene extends Scene {
+export class VictoryScene extends Scene {
 
     game
 
@@ -13,7 +12,7 @@ export class GameOverScene extends Scene {
     onActivate(ctx) {
         console.log("the scene has started!")
 
-        const gameover = new FailGame()
+        const gameover = new WinGame()
         this.add(gameover)
     }
 

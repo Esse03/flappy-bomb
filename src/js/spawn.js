@@ -42,7 +42,7 @@ export class ObstacleSpawner extends Actor {
 
             console.log("spawn")
             this.cloud = new KillerClowd(
-                this.random.integer(0, 800),
+                this.random.integer(0, 600),
                 this.random.integer(-100, 100),
                 this.speed
             )
@@ -55,7 +55,7 @@ export class ObstacleSpawner extends Actor {
             this.speed -= 10
             console.log(this.speed, this.timer.interval)
         } else {
-            this.game.gameOver()
+            this.game.goToScene("VictoryScene")
         }
     }
 

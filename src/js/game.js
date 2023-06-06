@@ -3,6 +3,7 @@ import {Actor, Engine, Physics, Vector} from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
 import {Scene1} from "./scenes/scene1.js";
 import {GameOverScene} from "./scenes/gameover.js";
+import {VictoryScene} from "./scenes/victory.js";
 
 export class Game extends Engine {
 
@@ -18,6 +19,7 @@ export class Game extends Engine {
 
         this.add('Scene1', new Scene1())
         this.add('GameOverScene', new GameOverScene())
+        this.add('VictoryScene', new VictoryScene())
 
         this.goToScene('Scene1')
     }

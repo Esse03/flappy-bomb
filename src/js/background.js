@@ -52,8 +52,27 @@ export class GameOver extends Actor {
     onInitialize(_engine) {
         super.onInitialize(_engine);
 
-        this.graphics.use(Resources.GameOver.toSprite())
         this.pos = new Vector(_engine.drawWidth/2,_engine.drawHeight/2)
+    }
+
+}
+
+export class FailGame extends GameOver {
+
+    onInitialize(_engine) {
+        super.onInitialize(_engine);
+
+        this.graphics.use(Resources.GameOver.toSprite())
+    }
+
+}
+
+export class WinGame extends GameOver {
+
+    onInitialize(_engine) {
+        super.onInitialize(_engine);
+
+        this.graphics.use(Resources.Victory.toSprite())
     }
 
 }

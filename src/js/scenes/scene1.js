@@ -3,6 +3,7 @@ import {GameOverScene} from "./gameover.js";
 import {Background, Sun} from "../background.js";
 import {Player} from "../player.js";
 import {ObstacleSpawner} from "../spawn.js";
+import {UI} from "../ui.js";
 
 export class Scene1 extends Scene {
 
@@ -12,6 +13,9 @@ export class Scene1 extends Scene {
 
         this.game = _engine
         console.log("the scene has started!")
+
+        const info = new UI()
+        this.add(info)
 
         const backGround = new Background()
         this.add(backGround)
@@ -25,7 +29,7 @@ export class Scene1 extends Scene {
 
         this.pause = new Timer({
             fcn: () => this.loadGameObjects(this.game),
-            interval: 3000,
+            interval: 2000,
             repeats: false
         })
         this.game.currentScene.add(this.pause)
